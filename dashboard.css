@@ -29,8 +29,9 @@ ul {
 }
 
 .header-top {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-top-search {
@@ -39,12 +40,22 @@ ul {
 }
 
 input {
+  border-radius: 25px;
+  width: 500px;
   height: 22px;
+  border: none;
+  background-color: lightgray;
 }
 
 .header-top-profile {
   display: grid;
   grid-template-columns: 100px 100px 1fr;
+  align-items: center;
+}
+
+.profile-pic {
+  height: 50px;
+  width: 50px;
 }
 
 .header-bottom {
